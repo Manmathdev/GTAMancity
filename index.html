@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Sunset City — Open World</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="game-wrap"><canvas id="game"></canvas>
+<div id="hud"><div class="topline"><div class="brand"><span class="brand-dot"></span><div><b>SUNSET CITY</b><small>OPEN WORLD / BUILD 0.1</small></div></div><div class="stats"><span id="money">$ 2,500</span><span id="health">♥ 100</span><span id="wanted">☆☆☆☆☆</span></div></div>
+<div id="mission-card"><small id="mission-tag">FREE ROAM</small><b id="mission-title">The city is yours</b><span id="mission-desc">Find a gold marker to start a job.</span></div>
+<div id="character-card"><small>ACTIVE PROTAGONIST <span id="char-number">01</span></small><b id="char-name">JAX MERCER</b><span id="char-ability">Driver · vehicle handling bonus</span><div class="char-switch"><span>1</span> Jax <span>2</span> Nova <span>3</span> Eli</div></div>
+<div id="prompt"></div><div id="toast"></div>
+<div id="map-frame"><canvas id="minimap" width="180" height="180"></canvas><div class="map-label">SUNSET COUNTY</div></div>
+<div id="vehicle-hud" class="hidden"><b id="vehicle-name">COUPE</b><span id="speed">0 KM/H</span><div class="damage-track"><i id="damage-fill"></i></div></div>
+<div id="crosshair">+</div>
+<div id="pause-screen" class="hidden"><div class="menu-panel"><small>SUNSET CITY</small><h1>PAUSED</h1><button id="resume-btn">Resume game</button><button id="save-btn">Save progress</button><button id="load-btn">Load progress</button><button id="help-btn">Controls & help</button><p id="menu-message">Your progress saves in this browser.</p><button id="close-menu">Back to game</button></div></div>
+<div id="help-screen" class="hidden"><div class="menu-panel"><h2>FIELD GUIDE</h2><p><b>Move:</b> WASD / left stick · <b>Look:</b> mouse / right side drag</p><p><b>Sprint:</b> Shift · <b>Jump:</b> Space · <b>Interact / enter car:</b> E</p><p><b>Drive:</b> WASD · <b>Brake:</b> Space · <b>Exit:</b> E · <b>Switch character:</b> 1 / 2 / 3</p><p><b>Mission:</b> reach the gold ring and press E. Complete jobs for cash.</p><button id="help-back">Back</button></div></div>
+<div id="touch-controls"><div id="stick-area"><div id="stick-knob"></div></div><div class="touch-right"><button id="touch-jump">JUMP</button><button id="touch-action">ACTION</button><button id="touch-sprint">RUN</button></div><div id="drive-controls" class="hidden"><button data-drive="forward">▲</button><button data-drive="left">◀</button><button data-drive="back">▼</button><button data-drive="right">▶</button></div></div>
+<div id="loading"><div class="loader-mark">SC</div><h2>WAKING UP THE CITY</h2><p>Building roads, traffic and trouble…</p><div class="load-track"><i></i></div></div>
+</div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js"}}</script><script type="module" src="src/main.js"></script></body></html>
